@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Reset Password PHP-->
+    <?php include "forgot_passwd.php";?>
+    
+    <!--Reset-passwd CSS-->
+    <link rel="stylesheet" type="text/css" href="../CSS/reset-passwd.css">
+    
+    <!--Google Fonts-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Overpass:ital@1&family=Poppins&display=swap">
+
+    <!--Icons-->
+    <link rel="stylesheet" type="text/css" href="">
+
+    <!--Favicon Icon-->
+    <link rel="icon" type="image" href="https://img.icons8.com/fluent/48/000000/cloud.png">
+    
+    <!--Fontawesome Icons CDN-->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Cloud Storage | Password Reset</title>
+</head>
+<body>
+    <h1 id="title">Password Reset Form</h1>
+    <section class="container">
+        <header>
+            <h1>Forgot Password?</h1>
+        </header>
+        <hr>
+        <div class="content">
+            <p id="reset-descrip">We've got you covered! Enter your username or email and we will email you the password reset instructions.</p>
+            <div class="input-container">
+                <form action="../PHP/forgot_passwd.php" method="POST">
+                    <i class="icon fa fa-user"></i>
+                    <input class="user" name="usr_name" type="text" placeholder="Your email or username..." autocomplete="reset-passwd.html" autofocus required>
+                    <input class="btn" type="submit" name="reset_passwd" value="Reset Password"></input>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a id="login" target="_blank" href="/login-auth/HTML/index.html">Login</a>
+        <p id="copyright">&#9426 Reset Password Form. All Rights Reserved | Template by Dennis Williams.</p>
+    </footer>
+</body>
+</html>

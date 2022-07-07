@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-signin-client_id" content="2706132957-lirgvb74clhc9qk5skc33db9evftnj92.apps.googleusercontent.com">
+
+        <!--PHP Script-->
+        <?php include "login.php";?>
+
+        <!--Main CSS-->
+        <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+        
+        <!--Google Fonts-->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Overpass:ital@1&family=Poppins&display=swap">
+
+        <!--Icons-->
+        <link rel="stylesheet" type="text/css" href="">
+
+        <!--Favicon Icon-->
+        <link rel="icon" type="image" href="https://img.icons8.com/fluent/48/000000/cloud.png">
+
+        <!--Fontawesome Icons CDN-->
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Cloud Storage Login</title>
+    </head>
+    <body>
+        <section class="container">
+            <div class="login-box">
+                <section class="header">
+                    <h1> Login into Cloud Storage </h1>
+                </section>
+                <hr>
+                <section class="credentials">
+                    <form  id="login-form" action="../PHP/login.php" method="POST" autocapitalize="on" autocomplete="on">
+                        <div class="input-container">
+                            <i class="icon fa fa-user" aria-hidden="true"></i>
+                            <input class="input-field" name="usrname" type="text" placeholder="Email or Username" autocomplete="username" autofocus>
+                        </div>
+                        <br>
+                        <div class="input-container">
+                            <i class="icon fa fa-lock" aria-hidden="true"></i>
+                            <input id="passwd" class="input-field" name="passwd" type="password" placeholder="********" autocomplete="current-password" autofocus>
+                            <a id="eye" class="fa fa-eye" role="button" onclick="show()"></a>
+                        </div>
+                        <br>
+                        <div class="space">
+                            <input id="checkbox" name="checkbox" type="checkbox"><label>Remember Me</label>
+                            <a id="reset-btn" target="_blank" href="../HTML/forgot-passwd.html">Reset Password</a>
+                        </div>
+                        <br>
+                        <input id="signin" class="login-btn" type="submit" role="button" form="login-form" value="Login"></div>
+                        <a id="signup" class="login-btn" type="submit" role="button" form="login-form" target="_blank" href="../HTML/signup.html">Create Account</a>
+                        <p>Or sign in with: </p>
+                        <!--Facebook Link-->
+                        <a id="fb" class="social-links" target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook"></i> Facebook</a>
+                        <!--Google Link-->
+                        <a id="google" class="social-links" target="_blank" data-onsuccess="onSignIn"><i class="fa fa-google"></i> Google</a>
+                        <!--Github Link-->
+                        <a id="github" class="social-links" target="_blank" href="https://www.github.com"><i class="fa fa-github"></i> Github</a>
+                    </form>
+                    
+                </section>
+            </div>
+        </section>
+        <p id="copyright">&#9426 Cloud Storage Login Form. All Rights Reserved | Template by Dennis Williams.</p>
+    </body>
+    <script type="text/javascript" src="../Javascript/passwd-hide.js"></script>
+    <script type="text/javascript" src="../Javascript/toggle-btn.js"></script>
+    <!--Google Oauth2.0 Script-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript" src="../Javascript/google-login.js"></script>
+</html>

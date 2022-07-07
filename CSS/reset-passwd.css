@@ -1,0 +1,130 @@
+/**************************************************************************************************
+*
+*
+*   Arthor: Dennis Williams
+*   Title: Password Reset CSS File
+*
+*
+**************************************************************************************************/
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: white;
+    background-image: linear-gradient(to left,#00c6ff, #0072ff);
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+#title {
+    color: white;
+    z-index: 1;
+    padding: 70px 0px 0px 0px;
+}
+.container {
+    z-index: 1;
+    height: 40vh;
+    width: 50%;
+    margin: 11%;
+    margin-left: 25%;
+    padding: 2%;
+    border-radius: 25px 25px 25px 25px;
+    background-color: #ffffff;
+    box-shadow: 0 18px 27px 0 rgba(0, 0, 0, 0), 0 20px 54px 0 rgba(0,0,0,0.19);
+}
+h1 {
+    color:#0072ff;
+    border-radius: 0px 25px 0px 25px;
+}
+hr {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.content {
+
+}
+#reset-descrip {
+    justify-content: center;
+    font-size: normal;
+    font-weight: 500;
+}
+.input-container {
+    padding: 5%;
+}
+.icon {
+    color: black;
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 20px;
+}
+.user {
+    outline: none;
+    border: none;
+    margin-bottom: 2%;
+    padding: 1.5%;
+    padding-left: 45px;
+    width: 90%;
+    text-align: left;
+    border-radius: 25px 25px 25px 25px;
+    background-color: rgba(206, 205, 205, 0.5);
+}
+.user:focus {
+    outline: none;
+    border: 1.5px solid #0072ff;
+    margin-bottom: 2%;
+    padding: 1.5%;
+    padding-left: 45px;
+    width: 90%;
+    border-radius: 25px 25px 25px 25px;
+    transition-duration: 0.4s;
+    background-color: rgba(252, 249, 249, 0.877);
+    box-shadow: 0 18px 27px 0 rgba(0, 0, 0, 0), 0 20px 54px 0 rgba(0,0,0,0.19);
+}
+.btn {
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 1.5%;
+    width: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 25px 25px 25px 25px;
+    background-color:#0072ff;
+    color: white;
+    text-transform: uppercase;
+}
+.btn:hover {
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 1.5%;
+    width: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 25px 25px 25px 25px;
+    transition-duration: .8s;
+    background-image: linear-gradient(to left,#00c6ff, #0072ff);
+    color: white;
+    box-shadow: 0 18px 27px 0 rgba(0, 0, 0, 0), 0 20px 54px 0 rgba(0,0,0,0.19);
+}
+#login {
+    text-decoration: none;
+    padding: 0%;
+    margin: 0%;
+    border: 0;
+}
+#copyright {
+    color: white;
+}

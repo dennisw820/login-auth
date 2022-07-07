@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--PHP script-->
+        <?php require "../PHP/results.php";?>
+
+        <!--Sign Up CSS-->
+        <link rel="stylesheet" type="text/css" href="../CSS/signup.css">
+        
+        <!--Google Fonts-->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Overpass:ital@1&family=Poppins&display=swap">
+
+        <!--Icons-->
+        <link rel="stylesheet" type="text/css" href="">
+
+        <!--Favicon Icon-->
+        <link rel="icon" type="image" href="https://img.icons8.com/fluent/48/000000/cloud.png">
+
+        <!--Fontawesome Icons CDN-->
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <title>Cloud Storage | Sign Up</title>
+    </head>
+    <body>
+        <section id="container"> 
+            <div class="signup-box">
+                <h1>Sign Up for Cloud Storage <i class="fa fa-cloud"></i></h1>
+                <p>Fill out the form to get started creating an account.</p>
+                <form action="../PHP/signup.php" method="POST">
+                    <i class="icon fa fa-user"></i>
+                    <input class="" name="username" type="text" placeholder="Username" autofocus autocomplete="signup.html" autocapitalize="on" <!--pattern=""-->
+                    <br>
+                    <i class="icon fa fa-envelope"></i>
+                    <input type="email" name="e-mail" placeholder="email@example.com" autocomplete="signup.html" autofocus>
+                    <br>
+                    <i class="icon fa fa-lock"></i>
+                    <input id="passwd" name="passwd" type="password" placeholder="At least 8 characters" autocomplete="signup.html" autofocus <!--pattern=""-- tooltip="Password must contain at least 8 characters, one special character, and one capital letter.">
+                    <a id="eye" class="hide fa fa-eye" onclick="show()"></a>
+                    <br>
+                    <i class="icon fa fa-lock"></i>
+                    <input id="passwd2" name="passwd2" type="password" placeholder="Confirm password" autocomplete="signup.html" autofocus <!--pattern=""-- tooltip="Retype password.">
+                    <a id="eye2" class="hide fa fa-eye" onclick="show()"></a>
+                    <br>
+                    <input name="checkbox" type="checkbox">
+                    <label>By clicking “Create Account”, you agree to our <a class="terms" target="_blank" href="https://help.github.com/en/github/site-policy/github-terms-of-service">Terms of Service</a> and <a class="terms" target="_blank" href="https://help.github.com/en/github/site-policy/github-privacy-statement">Privacy Statement</a>.</label>
+                    <br>
+                    <input type="submit" name="submit" value="Create Account">
+                    <br>
+                    <article>Already have an account?<a target="_self" href="index.html">Log in</a></article>
+                </form>
+            </div>
+            
+        </section>
+        <footer>
+            <p id="copyright">&#9426 Cloud Storage Sign Up Form. All Rights Reserved | Template by Dennis Williams.</p>
+        </footer>
+    </body>
+    <script type="text/javascript" src="/Javascript/passwd-hide.js"></script>
+</html>
